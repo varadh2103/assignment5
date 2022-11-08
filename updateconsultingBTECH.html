@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous" />
+
+		<style>
+			.my-menu {
+
+				text-align: center;
+			}
+      .header{
+        background-color: skyblue;
+        line-height: 70px;
+        padding-left: 30px;	
+      }
+      a,a:hover {
+        text-decoration: none!important;
+      } 
+      .logout{
+        float: right;
+        padding-right: 30px;
+      }
+      ul{
+        background-color: #424a5b;
+        width: 16%;
+        height: 100%;
+        position: fixed;
+        padding-top: 5%;
+        text-align: center;
+      }
+      ul li {
+        list-style: none;
+        padding-bottom: 30px;
+        font-size: 15px;
+      }
+      ul li a {
+        color: white;
+        font-weight: bold;
+      }
+      ul li a:hover{
+        color: skyblue;
+        text-decoration: none;
+      }
+      ul li a:active{
+          background-color:blue;
+        color: white;
+      }
+      .content{
+        margin-left: 20%;
+        margin-top: 5%;
+      }
+      form{
+        margin-left: 20%;
+      }
+      a{
+        margin-left: 20%;
+      }
+		</style>
+	</head>
+
+	<body>
+    <header class="header">
+		
+      <a href="dashboard2.html">Admin Dashboard</a>
+  
+      <div class="logout">
+        
+        <a href="logout.php" class="btn btn-primary">Logout</a>
+  
+      </div>
+  
+    </header>
+  
+  
+    <aside>
+      
+      <ul>
+        
+        <li>
+          <a  href="home.html">HOME</a>
+        </li>
+  
+        <li>
+          <a href="create.html">CREATE</a>
+        </li>
+  
+        <li>
+          <a href="update.html">UPDATE</a>
+        </li>
+  
+        <li>
+          <a href="candidateview.html">CANDIDATE VIEW</a>
+        </li>
+  
+  
+  
+  
+      </ul>
+  
+  
+    </aside>
+
+    <form>
+      <p>SELECT JOB TYPE</p>  
+          <input type="checkbox" id="C" name="C" value="C"/>  
+              <label>CONSULTING MANAGER</label>   
+          <input type="checkbox" id="Java" name="Java" value="Java" />  
+              <label>SALES MANAGER</label>  
+          <input type="checkbox" id="Python" name="Python" value="Python"/>  
+              <label>MARKETING INTERN</label> 
+          <input type="checkbox" id="PHP" name="PHP" value="PHP"/>  
+                    <label>LOGISTIC ENGGINER</label>
+        <br/> 
+        <br/>           
+        <p>UPDATE MINIMUM QULAIFICATION</p>  
+          <input type="checkbox" id="C" name="C" value="C"/>  
+              <label>BTECH CS</label>   
+          <input type="checkbox" id="Java" name="Java" value="Java"/>  
+              <label>MTECH CS</label>  
+          <input type="checkbox" id="Python" name="Python" value="Python"/>  
+              <label>B COM</label> 
+          <input type="checkbox" id="PHP" name="PHP" value="PHP"/>  
+                <label>M COM</label>
+        <br/>
+        <br/>        
+        <p>UPDATE YEARS OF EXPERIENCE REQUIRED</p>  
+          <input type="checkbox" id="C" name="C" value="C"/>  
+              <label>0-2</label>   
+          <input type="checkbox" id="Java" name="Java" value="Java"/>  
+              <label>2-4</label>  
+          <input type="checkbox" id="Python" name="Python" value="Python"/>  
+              <label>4-6</label> 
+          <input type="checkbox" id="PHP" name="PHP" value="PHP"/>  
+                <label>6-8</label>        
+    </form>
+    <br/>
+    <br/>
+    <a href="updateconsultingBTECH02.html">
+        <input type="submit"/>
+      </a>
+    
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+				integrity=
+"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+				crossorigin="anonymous">
+	</script>
+		<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+				integrity=
+"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+				crossorigin="anonymous">
+	</script>
+		<script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+				integrity=
+"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+				crossorigin="anonymous">
+	</script>
+	</body>
+</html>

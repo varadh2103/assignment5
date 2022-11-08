@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+			<meta charset="utf-8">
+			<title>Admin Dashboard</title>
+
+			<link rel="stylesheet" type="text/css" href="admin.css">
+			<link rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous" />
+
+			<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<style>
+			*
+			{
+				margin: 0px;
+				padding: 0px;
+			}
+
+			.header
+			{
+
+				background-color: rgba(133, 160, 171, 0.568);
+				line-height: 70px;
+				padding-left: 30px;	
+			}
+
+			a,a:hover 
+			{
+				text-decoration: none!important;
+			}
+
+			.logout
+			{
+				float: right;
+				border-radius: 6px;
+				padding-right: 30px;
+			}
+
+			ul
+			{
+				background-color: #424a5b;
+				width: 11.4%;
+				height: 100%;
+				position: fixed;
+				padding-top: 5%;
+				text-align: center;
+			}
+
+			ul li 
+			{
+				list-style: none;
+				padding-bottom: 30px;
+				font-size: 15px;
+			}
+
+			ul li a 
+			{
+				color: white;
+				font-weight: bold;
+			}
+
+			ul li a:hover
+			{
+				color: skyblue;
+				text-decoration: none;
+			}
+			ul li a:active
+			{
+				background-color:blue;
+				color: white;
+			}
+
+
+			.content
+			{
+				margin-left: 5%;
+				margin-top: 5%;
+			}
+			table, th, td {
+				border: 1px solid black;
+				border-collapse: collapse;
+				margin-left: 120px;
+				text-align: center;
+				height:50px;
+			}
+			.my-menu {
+				text-align: center;
+			}
+
+		</style>
+	</head>
+<body style="background-color: aliceblue;">
+
+	<header class="header">
+		
+		<a href="dashboard.html"><b>Admin Dashboard</b></a>
+
+		<div class="logout">
+			
+			<a href="" class="btn btn-primary">Signout</a>
+
+		</div>
+
+	</header>
+		<aside>
+		<ul>
+			
+			<li>
+				<a  href="home.html">HOME</a>
+			</li>
+
+			<li>
+				<a href="create.html">CREATE</a>
+			</li>
+
+			<li>
+				<a href="update.html">UPDATE</a>
+			</li>
+
+			<li>
+				<a href="candidateview.html">CANDIDATE VIEW</a>
+			</li>
+		</ul>
+	    </aside>
+
+	<div>
+		<table style="width: 90%;">
+			<colgroup>
+				
+				<col span="7" style="background-color: rgb(95, 205, 205)">
+			</colgroup>
+			<tr>
+				<th>MON</th>
+				<th>NAME</th>
+				<th>POSITION</th>
+				<th>AGE</th>
+				<th>QULAIFICATION</th>
+				<th>WORK EXPERIENCE</th>
+				<th>RECOMMENDATION LETTER</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>BHANU</td>
+				<td>ASSISTANT MANAGER</td>
+				<td>25</td>
+				<td>MTECH CS</td>
+				<td>2 YEARS</td>
+				<td>YES</td>
+			</tr>
+
+			<tr>
+				<td>15</td>
+				<td>SAKETH</td>
+				<td>ASSISTANT MANAGER</td>
+				<td>31</td>
+				<td>MID</td>
+				<td>0 YEARS</td>
+				<td>NO</td>
+			</tr>
+
+			<tr>
+				<td>35</td>
+				<td>KARTHIK</td>
+				<td>ASSISTANT MANAGER</td>
+				<td>35</td>
+				<td>MIC</td>/td>
+				<td>2 YEAR</td>
+				<td>YES</td>
+			</tr>
+			<tr>
+				<td>35</td>
+				<td>HEMANTH</td>
+				<td>ASSISTANT MANAGER</td>
+				<td>28</td>
+				<td>MIS</td>/td>
+				<td>2 YEAR</td>
+				<td>YES</td>
+			</tr>
+
+		</table>
+	</div>
+	<br/>
+	<br/>
+	<br/>	
+	<div class="dropdown my-menu">
+		<button class="btn btn-secondary
+					dropdown-toggle"
+				type="button"
+				id="dropdownMenuButton"
+				data-toggle="dropdown"
+				aria-haspopup="true"
+				aria-expanded="false">
+			Pushdown
+		</button>
+		<div class="dropdown-menu"
+			aria-labelledby="dropdownMenuButton">
+			<a class="dropdown-item"
+			href="salesmanager.html">SALES MANAGER</a>
+			<a class="dropdown-item"
+			href="purchasemanager.html">PURCHASE MANAGER</a>
+			<a class="dropdown-item"
+			href="generalmanager.html">GENERAL MANAGER</a>
+			<a class="dropdown-item"
+			href="candidateview.html">ALL CANDIDATES</a>
+
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	integrity=
+"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	crossorigin="anonymous">
+</script>
+<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+	integrity=
+"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	crossorigin="anonymous">
+</script>
+<script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+	integrity=
+"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	crossorigin="anonymous">
+</script>
+
+</body>
+</html>
+
+
+
+
